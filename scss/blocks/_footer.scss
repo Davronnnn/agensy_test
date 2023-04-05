@@ -1,0 +1,150 @@
+.footer {
+	position: relative;
+
+	background: #f1f1f1;
+	padding: 60px 115px 24px;
+
+	overflow: hidden;
+
+	&::before {
+		content: url('../../assets/F.png');
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 449px;
+		height: 160px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 70px;
+	}
+
+	.copywrite {
+		font: 300 12px/167.5% 'Open Sans';
+
+		text-align: center;
+		color: #c4c4c4;
+	}
+
+	&__title {
+		margin-bottom: 29px;
+		font: 400 12px/14px 'Work Sans';
+
+		letter-spacing: 0.165em;
+		text-transform: uppercase;
+
+		color: #000000;
+	}
+
+	&__form {
+		margin-bottom: 26px;
+	}
+
+	&__messengers {
+		display: flex;
+		gap: 18px;
+		transition: fill 0.2s linear;
+		cursor: pointer;
+
+		svg:hover path {
+			fill: #000000;
+		}
+	}
+
+	&__left {
+		width: 100%;
+	}
+
+	&__links {
+		width: 100%;
+
+		display: flex;
+		justify-content: space-evenly;
+	}
+	form {
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	&__button {
+		background-color: transparent;
+		border: none;
+		position: absolute;
+		right: 0;
+
+		color: #fff;
+
+		svg {
+			margin-bottom: 20px;
+		}
+	}
+
+	input[type='email'] {
+		position: relative;
+		width: 100%;
+		height: 2.5rem;
+		display: block;
+
+		border: none;
+		border-bottom: 0.1rem solid rgba($color: #000000, $alpha: 0.5);
+		border-radius: 0;
+
+		appearance: none;
+		background-color: transparent;
+		outline: none;
+
+		font: 400 12px/14px 'Work Sans';
+
+		color: #000000;
+	}
+	input:focus,
+	input:checked {
+		background-color: transparent;
+	}
+	input:-internal-autofill-selected {
+		appearance: menulist-button;
+		background-image: none !important;
+		background-color: transparent !important;
+	}
+
+	&__item {
+		margin-bottom: 12px;
+		display: inline-block;
+
+		font: 400 14px/167.5% 'Open Sans';
+
+		color: #7e7e7e;
+	}
+
+	@media only screen and (max-width: 768px) {
+		padding: 40px 0 0 0;
+		.container {
+			flex-direction: column;
+		}
+
+		&::before {
+			content: url('../../assets/F-small.png');
+			position: absolute;
+
+			top: 100%;
+
+			transform: translate(10%, -90%);
+			width: 271px;
+			height: 97px;
+		}
+
+		&__links {
+			margin-top: 40px;
+			justify-content: start;
+			flex-direction: column;
+		}
+		&__link {
+			margin-top: 25px;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.hero {
+	position: relative;
+
+	padding: 55px 40px;
+
+	&__content {
+		color: #fff;
+
+		max-width: 600px;
+	}
+
+	&__title {
+		font: 400 28px/130% 'Open Sans';
+
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+	&__text {
+		margin-top: 120px;
+
+		font: 400 14px/167.5% 'Open Sans';
+	}
+	&__link {
+		margin-top: 80px;
+
+		display: inline-block;
+
+		color: #fff;
+		font: 400 14px/167.5% 'Open Sans';
+	}
+
+	&__img {
+		position: absolute;
+
+		right: 0;
+		top: 0;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		&__content {
+			width: 50%;
+		}
+		&__img {
+			width: 60%;
+			height: auto;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		padding: 45px 0;
+
+		& .container {
+			display: flex;
+			flex-direction: column;
+		}
+		&__content {
+			width: 100%;
+		}
+
+		&__title {
+			font: 600 18px/130% 'Open Sans';
+
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		&__text {
+			margin-top: 19px;
+			/* body-s/regular */
+
+			font: 400 12px/167.5% 'Open Sans';
+		}
+
+		&__link {
+			margin-top: 40px;
+			/* body-s/regular */
+			font: 400 12px/167.5% 'Open Sans';
+		}
+		&__img {
+			position: relative;
+			width: 100%;
+		}
+	}
+}

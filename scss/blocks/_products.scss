@@ -1,0 +1,15 @@
+.products {
+	background-color: #fff;
+	color: #000;
+
+	&__title {
+		margin-bottom: 42px;
+
+		font: 400 28px/130% 'Open Sans';
+
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+
+		color: #000000;
+	}
+}

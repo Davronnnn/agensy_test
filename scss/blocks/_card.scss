@@ -1,0 +1,40 @@
+.card {
+	position: relative;
+	&__image {
+		width: 100%;
+	}
+
+	&__discount {
+		position: absolute;
+		left: 8px;
+		top: 8px;
+		padding: 4px 7px;
+		background: #ffffff;
+
+		font: 400 12px/167.5% 'Open Sans';
+
+		text-align: center;
+
+		color: #000000;
+	}
+
+	&__title {
+		margin-top: 8px;
+		font: 300 12px/168% 'Oswald';
+
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+
+		color: #000000;
+	}
+	&__rating,
+	&__price {
+		margin-top: 8px;
+
+		font: 300 12px/168% 'Oswald';
+
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: #353535;
+	}
+}

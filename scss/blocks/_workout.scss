@@ -1,0 +1,46 @@
+.workout {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__title {
+		margin-left: 40px;
+
+		width: 517px;
+
+		font: 700 40px/143% 'Open Sans';
+
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+	}
+
+	@media only screen and (max-width: 1120px) {
+		&__img {
+			width: 500px;
+			height: 420px;
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		&__img {
+			width: 400px;
+			height: auto;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		&__img {
+			width: 100%;
+			height: auto;
+		}
+
+		&__title {
+			width: 100%;
+
+			margin-bottom: 24px;
+
+			font-size: 28px;
+			line-height: 38px;
+			letter-spacing: 0.08em;
+		}
+	}
+}
