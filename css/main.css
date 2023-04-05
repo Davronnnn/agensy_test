@@ -152,6 +152,31 @@ section {
   }
 }
 
+.main {
+  position: relative;
+}
+.main .line1,
+.main .line2,
+.main .line3 {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  border: 1px solid #c2a578;
+  z-index: -1;
+}
+.main .line1 {
+  left: 25%;
+}
+.main .line2 {
+  left: 50%;
+}
+.main .line3 {
+  left: 75%;
+}
+
 .hero {
   position: relative;
   padding: 55px 40px;
@@ -316,6 +341,7 @@ section {
     font-size: 28px;
     line-height: 38px;
     letter-spacing: 0.08em;
+    margin-left: 0px;
   }
 }
 
